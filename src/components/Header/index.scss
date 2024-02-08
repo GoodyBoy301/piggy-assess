@@ -1,0 +1,164 @@
+.header {
+  position: relative;
+  color: var(--piggyWhite);
+  font-family: var(--piggySansBody);
+}
+
+.header__bg {
+  position: absolute;
+  width: 100%;
+  width: 151.2rem;
+  height: 99.2rem;
+  mask: url("clip.svg") 0rem 0rem/151.2rem 99rem no-repeat;
+  & > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+.header__bg__left {
+  width: 75.6rem;
+  height: 97.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.header__bg__right {
+  @extend .header__bg__left;
+  right: 0;
+  left: unset;
+  transform: rotateY(180deg);
+}
+
+.header__wrapper {
+  display: grid;
+  justify-content: center;
+  padding-top: 28.8rem;
+  position: relative;
+  z-index: 10;
+}
+
+.header__title {
+  font-family: var(--piggySansTitle);
+  font-size: 8.4rem;
+  font-weight: 500;
+  line-height: 9.2rem;
+  width: 73.3rem;
+  text-align: center;
+  margin: 0 auto;
+  i {
+    color: var(--piggyOffBlue);
+  }
+}
+
+.header__subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  width: 73.3rem;
+  text-align: center;
+  margin: 0.8rem auto 0;
+}
+
+.header__download {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.header__download__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid var(--piggyOffWhite);
+  font-size: 1.4rem;
+  line-height: 1rem;
+  font-weight: 500;
+  gap: 1.2rem;
+  border-radius: 1.2rem;
+  width: 19rem;
+  height: 5.2rem;
+
+  svg {
+    width: 1.6rem;
+    height: 1.802rem;
+  }
+
+  &:nth-child(2) svg {
+    width: 1.672rem;
+    height: 2.067rem;
+  }
+}
+
+.header__media {
+  width: 110.2rem;
+  height: 79.535rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  top: 67.565rem;
+}
+
+.header__end {
+  display: flex;
+  margin-top: 36.6rem;
+  background-color: var(--piggyBlue);
+  height: 19.6rem;
+  width: 100vw;
+  padding: 4.8rem 23.061rem 4.8rem 7.7rem;
+  gap: 16.7rem;
+}
+
+.header__end__left {
+  display: flex;
+  gap: 2rem;
+  color: var(--piggyLightBlue);
+  font-family: var(--piggySansTitle);
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+
+  svg {
+    width: 9.6rem;
+    height: 10rem;
+  }
+
+  h2 {
+    width: 25.1rem;
+  }
+}
+
+.header__end__right {
+  font-size: 1.6rem;
+  line-height: 2.16rem;
+  color: var(--piggyOffWhite);
+  display: grid;
+  gap: 2.4rem;
+  padding: 0.8rem 0;
+
+  a {
+    line-height: 1.6rem;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+}
+
+.header__decoration {
+  width: 151.2rem;
+  height: 6.1rem;
+  transform: scale(1.05);
+  border-bottom: 1.1rem solid var(--piggyWhite);
+  overflow: hidden;
+}

@@ -1,0 +1,62 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: var(--piggyWhite);
+  font-family: var(--piggySansBody);
+  font-size: 1.6rem;
+  z-index: 20;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 4.8rem 7.6rem;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 20.757rem;
+  height: 4rem;
+  margin-right: 9.243rem;
+}
+
+.nav__links {
+  display: flex;
+  gap: 4.8rem;
+  line-height: 2.1rem;
+  padding: 1.4rem 3.2rem;
+  height: 4.8rem;
+  border-radius: 1.2rem;
+  border: 0.15rem solid var(--piggyGray);
+}
+
+.nav__link {
+  color: var(--piggyOffGray);
+  font-weight: 500;
+
+  &.active {
+    color: var(--piggyWhite);
+    font-weight: 700;
+  }
+}
+
+.nav__ctas {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+}
+
+.nav__cta__secondary {
+  padding: 1.6rem 2.2rem;
+}
+
+.nav__cta__primary {
+  background-color: var(--piggyWhite);
+  color: var(--piggyBlack);
+  padding: 1.6rem 2rem;
+  border-radius: 1.2rem;
+}
