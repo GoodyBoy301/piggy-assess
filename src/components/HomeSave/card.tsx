@@ -2,11 +2,11 @@ import React from "react"
 import arrowLeft from "../../assets/arrowLeft.svg"
 import "./index.scss"
 
-export default function HeroSaveCards() {
+export default function HomeSaveCards() {
   return (
     <ul className="home__save__list">
       {cardData.map((data) => (
-        <HeroSaveCard
+        <HomeSaveCard
           key={data.head}
           imgSrc={data.imgSrc}
           color={data.color}
@@ -27,7 +27,7 @@ type Props = {
   link: string
 }
 
-export const HeroSaveCard: React.FC<Props> = ({ color, head, body, link }) => {
+export const HomeSaveCard: React.FC<Props> = ({ color, head, body, link }) => {
   return (
     <li className="home__save__item">
       <figure className="home__save__icon"></figure>

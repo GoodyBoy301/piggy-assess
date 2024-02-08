@@ -1,8 +1,8 @@
 import ui001 from "../../assets/ui-001.png"
 import "./index.scss"
-import HeroSaveCards from "./card"
+import HomeSaveCards from "./card"
 
-function HeroSave() {
+function HomeSave() {
   return (
     <div className="home__save">
       <div className="home__save__wrapper">
@@ -14,11 +14,11 @@ function HeroSave() {
           <p className="home__save__subtitle">
             Earn 5%-15% when you save with any of these PiggyVest plans.
           </p>
-          <HeroSaveCards />
+          <HomeSaveCards />
         </div>
       </div>
     </div>
   )
 }
 
-export default HeroSave
+export default HomeSave
