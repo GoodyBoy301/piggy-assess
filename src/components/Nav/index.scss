@@ -15,9 +15,6 @@ $breakpoints: (
   font-family: var(--piggySansBody);
   font-size: 1.6rem;
   z-index: 20;
-  @include media("<phone") {
-    display: none;
-  }
 }
 
 .nav__wrapper {
@@ -25,6 +22,9 @@ $breakpoints: (
   align-items: center;
   padding: 4.8rem 7.6rem;
   justify-content: space-between;
+  @include media("<phone") {
+    padding: 2.8rem;
+  }
 }
 
 .nav__logo {
@@ -41,6 +41,9 @@ $breakpoints: (
   height: 4.8rem;
   border-radius: 1.2rem;
   border: 0.15rem solid var(--piggyGray);
+  @include media("<phone") {
+    display: none;
+  }
 }
 
 .nav__link {
@@ -59,6 +62,10 @@ $breakpoints: (
   gap: 0.2rem;
   line-height: 1.6rem;
   font-weight: 700;
+  @include media("<phone") {
+    font-size: 2.4rem;
+    margin-top: 0.7rem;
+  }
 }
 
 .nav__cta__secondary {
@@ -70,4 +77,7 @@ $breakpoints: (
   color: var(--piggyBlack);
   padding: 1.6rem 2rem;
   border-radius: 1.2rem;
+  @include media("<phone") {
+    display: none;
+  }
 }
