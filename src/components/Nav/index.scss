@@ -1,3 +1,11 @@
+$breakpoints: (
+  "phone": 760px,
+  "tablet": 1024px,
+  "desktop": 1920px,
+) !default;
+
+@import "../node_modules/include-media/dist/include-media";
+
 .nav {
   position: fixed;
   width: 100%;
@@ -7,6 +15,9 @@
   font-family: var(--piggySansBody);
   font-size: 1.6rem;
   z-index: 20;
+  @include media("<phone") {
+    display: none;
+  }
 }
 
 .nav__wrapper {

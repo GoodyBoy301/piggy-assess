@@ -1,24 +1,46 @@
+$breakpoints: (
+  "phone": 760px,
+  "tablet": 1024px,
+  "desktop": 1920px,
+) !default;
+
+@import "../node_modules/include-media/dist/include-media";
+
 .home__save {
   background-color: var(--piggyWhite);
   margin-top: -1rem;
   padding: 10.1rem 7.7rem 0;
   font-family: var(--piggySansBody);
+  @include media("<phone") {
+    padding: 5.6rem 2.8rem 0;
+  }
 }
 
 .home__save__wrapper {
   display: flex;
   gap: 9.1rem;
+  @include media("<phone") {
+    flex-direction: column;
+  }
 }
 
 .home__save__media {
   width: 44.3rem;
   height: 90.247rem;
+  @include media("<phone") {
+    display: none;
+  }
 }
 
 .home__save__title {
   font-family: var(--piggySansTitle);
   font-size: 6.4rem;
   line-height: 6rem;
+  @include media("<phone") {
+    text-align: center;
+    font-size: 3.4rem;
+    line-height: 0.9375;
+  }
 }
 
 .home__save__subtitle {
@@ -33,6 +55,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.4rem;
+  @include media("<phone") {
+    grid-template-columns: 1fr;
+  }
 }
 
 .home__save__item {
@@ -41,6 +66,10 @@
   border-radius: 3.2rem;
   width: 40rem;
   height: 35.15rem;
+
+  @include media("<phone") {
+    margin: 0 auto;
+  }
 
   &:nth-of-type(2) p {
     font-size: 1.6rem;

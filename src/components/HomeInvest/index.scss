@@ -1,8 +1,19 @@
+$breakpoints: (
+  "phone": 760px,
+  "tablet": 1024px,
+  "desktop": 1920px,
+) !default;
+
+@import "../node_modules/include-media/dist/include-media";
+
 .home__invest {
   background-color: var(--piggyWhite);
   padding: 30.253rem 9.4rem 0;
   font-family: var(--piggySansBody);
   position: relative;
+  @include media("<phone") {
+    padding: 10rem 2.8rem 0;
+  }
 }
 
 .home__invest__wrapper {
