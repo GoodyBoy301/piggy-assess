@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import HomeSave from "./components/HomeSave"
 import HomeInvest from "./components/HomeInvest"
 import HomeYou from "./components/HomeYou"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HomeSave />
       <HomeInvest />
       <HomeYou />
+      <Footer />
     </>
   )
 }
