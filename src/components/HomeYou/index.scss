@@ -1,3 +1,11 @@
+$breakpoints: (
+  "phone": 760px,
+  "tablet": 1024px,
+  "desktop": 1920px,
+) !default;
+
+@import "../node_modules/include-media/dist/include-media";
+
 .home__you {
   background-color: var(--piggyWhite);
   margin-top: -51.8rem;
@@ -14,6 +22,10 @@
     rgba(147, 197, 253, 0) 96.89%
   );
   border-radius: 8.4rem 8.4rem 0rem 0rem;
+  @include media("<phone"){
+    padding: 2.8rem 2.8rem 0;
+    border-radius: 2.8rem 2.8rem 0 0;
+  }
 }
 
 .home__you__customer {
@@ -21,6 +33,9 @@
   background-color: var(--piggyWhite);
   border-radius: 5.6rem;
   overflow: hidden;
+  @include media("<phone"){
+    flex-direction: column-reverse;
+  }
 }
 
 .home__you__read {
@@ -29,12 +44,21 @@
   place-content: center;
   padding: 5.8rem;
   gap: 2.4rem;
+  @include media("<phone"){
+    width: 100%;
+    gap: 1.6rem;
+    padding: 4.2rem;
+  }
 
   h2 {
     font-family: var(--piggySansTitle);
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 6.4rem;
+    @include media("<phone"){
+      font-size: 4rem;
+    line-height: 1.23;
+    }
   }
 
   p {
