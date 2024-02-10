@@ -60,9 +60,7 @@ function Header() {
             rel="noopener noreferrer"
             className="header__download__link"
           >
-            <svg width="17" height="20" viewBox="0 0 17 20">
-              <use href={`${playstore}#playstoresvg`}></use>
-            </svg>
+            <object data={playstore} type="image/svg+xml" />
             <span>Get on Google Play</span>
           </a>
           <a
@@ -71,17 +69,13 @@ function Header() {
             rel="noopener noreferrer"
             className="header__download__link"
           >
-            <svg width="18" height="22" viewBox="0 0 18 22">
-              <use href={`${appstore}#appstoresvg`}></use>
-            </svg>
+            <object data={appstore} type="image/svg+xml" />
             <span>Get on App Store</span>
           </a>
         </div>
         <div className="header__end">
           <div className="header__end__left">
-            <svg width="96" height="100" viewBox="0 0 96 100">
-              <use href={`${security}#securitysvg`}></use>
-            </svg>
+            <object data={security} type="image/svg+xml" />
             <h2>Your security is our priority</h2>
           </div>
           <div className="header__end__right">

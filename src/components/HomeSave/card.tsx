@@ -37,9 +37,7 @@ export const HomeSaveCard: React.FC<Props> = ({ color, head, body, link }) => {
       <p className="home__save__body">{body}</p>
       <a href={link} className="home__save__link">
         <span>Learn More</span>
-        <svg width="18" height="13" viewBox="0 0 18 13">
-          <use href={`${arrowLeft}#arrowleftsvg`}></use>
-        </svg>
+        <object data={arrowLeft} type="image/svg+xml" />
       </a>
     </li>
   )

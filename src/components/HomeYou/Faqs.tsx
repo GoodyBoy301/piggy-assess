@@ -25,9 +25,7 @@ export const HomeFaqItem: React.FC<Props> = ({ question, answer }) => {
   return (
     <li className="home__you__faq">
       <h3>
-        <svg width="14" height="14" viewBox="0 0 14 14">
-          <use href={`${plusminus}#plus`}></use>
-        </svg>
+        <object data={plusminus} type="image/svg+xml" />
         <i>{question}</i>
       </h3>
       <p>{answer}</p>

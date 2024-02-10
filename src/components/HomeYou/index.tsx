@@ -107,9 +107,7 @@ function HomeYou() {
               rel="noopener noreferrer"
               className="header__download__link"
             >
-              <svg width="17" height="20" viewBox="0 0 17 20">
-                <use href={`${playstore}#playstoresvg`}></use>
-              </svg>
+              <object data={playstore} type="image/svg+xml" />
               <span>Get on Google Play</span>
             </a>
             <a
@@ -118,9 +116,7 @@ function HomeYou() {
               rel="noopener noreferrer"
               className="header__download__link"
             >
-              <svg width="18" height="22" viewBox="0 0 18 22">
-                <use href={`${appstore}#appstoresvg`}></use>
-              </svg>
+              <object data={appstore} type="image/svg+xml" />
               <span>Get on App Store</span>
             </a>
           </div>

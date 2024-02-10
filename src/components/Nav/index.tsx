@@ -6,9 +6,7 @@ function Nav() {
     <div className="nav">
       <nav className="nav__wrapper">
         <a href="" className="nav__logo">
-          <svg width="208" height="40" viewBox="0 0 208 40">
-            <use href={`${logo}#logosvg`}></use>
-          </svg>
+          <object data={logo} type="image/svg+xml" />
         </a>
         <ul className="nav__links">
           <a href="" className="nav__link active">

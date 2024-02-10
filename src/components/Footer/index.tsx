@@ -20,9 +20,7 @@ function Footer() {
         <div className="footer__links">
           <div className="footer__name">
             <a href="" className="nav__logo">
-              <svg width="208" height="40" viewBox="0 0 208 40">
-                <use href={`${logo}#logosvg`}></use>
-              </svg>
+              <object data={logo} type="image/svg+xml" />
             </a>
             <img src={qr} alt="" />
           </div>
@@ -33,19 +31,13 @@ function Footer() {
             <FooterContact />
             <div className="footer__socials">
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                  <use href={`${fb}#fb`} />
-                </svg>
+                <object data={fb} type="image/svg+xml" />
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                  <use href={`${x}#x`} />
-                </svg>
+                <object data={x} type="image/svg+xml" />
               </a>
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                  <use href={`${ig}#ig`} />
-                </svg>
+                <object data={ig} type="image/svg+xml" />
               </a>
             </div>
           </ul>
