@@ -12,7 +12,10 @@ $breakpoints: (
   padding: 10.1rem 7.7rem 0;
   font-family: var(--piggySansBody);
   @include media("<phone") {
-    padding: 5.6rem 2.8rem 0;
+    z-index: 5;
+    position: relative;
+    padding: 7.6rem 2.8rem 0;
+    margin-top: -2rem;
   }
 }
 

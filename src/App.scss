@@ -13,6 +13,7 @@ html {
   @include media("<phone") {
     font-size: calc(100vw / 491.9 * 10);
     width: 100vw !important;
+    overflow-x: hidden;
   }
   @include media(">=desktop") {
     font-size: calc(100vw / 2750 * 10);
