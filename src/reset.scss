@@ -161,7 +161,8 @@ div,
   -webkit-tap-highlight-color: transparent;
 }
 
-svg {
+svg,
+object {
   display: block;
   width: inherit;
   height: inherit;

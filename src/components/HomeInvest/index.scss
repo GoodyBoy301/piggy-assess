@@ -20,7 +20,7 @@ $breakpoints: (
 .home__invest__wrapper {
   display: grid;
   justify-content: center;
-  @include media("<phone"){
+  @include media("<phone") {
     display: block;
   }
 }
@@ -46,7 +46,7 @@ $breakpoints: (
   text-align: center;
   width: 62.3rem;
   margin: 4.7rem auto 0;
-  @include media("<phone"){
+  @include media("<phone") {
     text-align: center;
     font-size: 3.4rem;
     line-height: 0.9375;
@@ -62,7 +62,7 @@ $breakpoints: (
   width: 62.3rem;
   margin: 1.6rem auto 0;
   color: var(--piggyGray);
-  @include media("<phone"){
+  @include media("<phone") {
     width: 100%;
     margin-top: 3.2rem;
   }
@@ -77,7 +77,7 @@ $breakpoints: (
   text-align: center;
   margin-top: 4.8rem;
   color: var(--piggyPurple);
-  @include media("<phone"){
+  @include media("<phone") {
     margin-top: 3.2rem;
     display: block;
     text-align: center;
@@ -89,7 +89,7 @@ $breakpoints: (
   width: 132.442rem;
   height: 59.842rem;
   top: 17.453rem;
-  @include media("<phone"){
+  @include media("<phone") {
     display: none;
   }
 
@@ -106,7 +106,8 @@ $breakpoints: (
     line-height: 2.4rem;
   }
 
-  svg {
+  svg,
+  object {
     width: 58.771rem;
     height: 21.704rem;
     top: 0;
@@ -150,7 +151,7 @@ $breakpoints: (
 .home__invest__media {
   margin-top: 20.2rem;
   display: flex;
-  @include media("<phone"){
+  @include media("<phone") {
     margin-top: -19rem;
     margin-left: -16rem;
     transform: scale(0.45);

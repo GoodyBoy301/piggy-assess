@@ -120,12 +120,14 @@ $breakpoints: (
   width: 19rem;
   height: 5.2rem;
 
-  svg {
+  svg,
+  object {
     width: 1.6rem;
     height: 1.802rem;
   }
 
-  &:nth-child(2) svg {
+  &:nth-child(2) svg,
+  &:nth-child(2) object {
     width: 1.672rem;
     height: 2.067rem;
   }
@@ -181,7 +183,8 @@ $breakpoints: (
     align-items: center;
   }
 
-  svg {
+  svg,
+  object {
     width: 9.6rem;
     height: 10rem;
     @include media("<phone") {

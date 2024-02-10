@@ -100,7 +100,8 @@ $breakpoints: (
     display: none;
   }
 
-  svg {
+  svg,
+  object {
     width: 3.333rem;
     height: 3.333rem;
   }
