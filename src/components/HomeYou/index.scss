@@ -22,7 +22,7 @@ $breakpoints: (
     rgba(147, 197, 253, 0) 96.89%
   );
   border-radius: 8.4rem 8.4rem 0rem 0rem;
-  @include media("<phone"){
+  @include media("<phone") {
     padding: 2.8rem 2.8rem 0;
     border-radius: 2.8rem 2.8rem 0 0;
   }
@@ -33,8 +33,9 @@ $breakpoints: (
   background-color: var(--piggyWhite);
   border-radius: 5.6rem;
   overflow: hidden;
-  @include media("<phone"){
+  @include media("<phone") {
     flex-direction: column-reverse;
+    border-radius: 2.4rem;
   }
 }
 
@@ -44,7 +45,7 @@ $breakpoints: (
   place-content: center;
   padding: 5.8rem;
   gap: 2.4rem;
-  @include media("<phone"){
+  @include media("<phone") {
     width: 100%;
     gap: 1.6rem;
     padding: 4.2rem;
@@ -55,9 +56,9 @@ $breakpoints: (
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 6.4rem;
-    @include media("<phone"){
+    @include media("<phone") {
       font-size: 4rem;
-    line-height: 1.23;
+      line-height: 1.23;
     }
   }
 
@@ -74,6 +75,11 @@ $breakpoints: (
   border-radius: 5.6rem;
   overflow: hidden;
   position: relative;
+  @include media("<phone") {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+  }
 }
 
 .home__you__play {
@@ -90,6 +96,9 @@ $breakpoints: (
   font-weight: 700;
   line-height: 2.3rem;
   color: var(--piggyWhite);
+  @include media("<phone") {
+    display: none;
+  }
 
   svg {
     width: 3.333rem;
@@ -101,6 +110,10 @@ $breakpoints: (
   margin-top: 12.5rem;
   display: flex;
   justify-content: space-between;
+  @include media("<phone") {
+    margin-top: 9rem;
+    flex-direction: column;
+  }
 }
 
 .home__you__head {
@@ -114,16 +127,28 @@ $breakpoints: (
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 6.2rem;
+    @include media("<phone") {
+      font-size: 3.8rem;
+      line-height: 1.23;
+      text-align: center;
+    }
   }
 
   p {
     margin: 1.6rem 3.8rem 0 0;
+    @include media("<phone") {
+      display: none;
+    }
   }
 }
 
 .home__you__body {
   width: 71.548rem;
   display: grid;
+  @include media("<phone") {
+    width: 100%;
+    margin-top: 3.2rem;
+  }
 }
 
 .home__you__faq {
